@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Be Casa – Uzbek Café</title>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Jost:wght@300;400;600&family=Amiri:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="sky" id="sky" aria-hidden="true"></div>
+<div class="lamps" id="lamps" aria-hidden="true"></div>
+<svg class="skyline" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#17305a" stroke="#d9a441" stroke-width="2" opacity=".55"><rect x="150" y="100" width="260" height="100"/><path d="M230 100Q280 10 330 100Z" fill="#1f8a8a"/><rect x="128" y="50" width="20" height="150"/><rect x="412" y="50" width="20" height="150"/><path d="M128 50l10-30 10 30zM412 50l10-30 10 30z" fill="#1f8a8a"/><rect x="470" y="60" width="260" height="140"/><path d="M560 200V120Q600 70 640 120V200Z" fill="#0f1d33"/><path d="M470 60Q600 -10 730 60Z" fill="#1f8a8a"/><rect x="790" y="100" width="260" height="100"/><path d="M870 100Q920 10 970 100Z" fill="#1f8a8a"/><rect x="768" y="50" width="20" height="150"/><rect x="1052" y="50" width="20" height="150"/><path d="M768 50l10-30 10 30zM1052 50l10-30 10 30z" fill="#1f8a8a"/><path d="M200 200V140Q230 110 260 140V200ZM840 200V140Q870 110 900 140V200Z" fill="#0f1d33"/></g></svg>
+<div class="caravan" id="caravan" aria-hidden="true"></div>
+<nav><div class="logo" data-go="0">BE<em>CASA</em><i>🐪</i></div>
+<div class="tabs"><button data-go="0" class="on">Welcome</button><button data-go="1">Menu & Order</button><button data-go="2">Book & Events</button></div></nav>
+
+<main class="book">
+<!-- PAGE 1 -->
+<section class="page show" id="p0">
+<div class="center portal"><div class="ar">Xush kelibsiz · أهلاً وسهلاً</div>
+<h1 class="big">Welcome to<br><span>Be Casa</span></h1>
+<p>Mehmaan Allah ka tohfa hai! Chai aur non se swagat, phir dum wala plov, tandoor samsa aur kabab. 100% Halal · Family seating.</p>
+<button class="btn" data-go="1">Menu dekho 🍽️</button> <button class="btn o" data-go="2">Table book karo 📅</button></div>
+<h2>Our Specialities</h2>
+<div class="grid" id="spec"></div>
+<div class="fire" aria-hidden="true"><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span></div>
+<div class="kazan">🍲 slow-cooked in the kazan</div>
+<div class="next"><button class="btn" data-go="1">Next page: Menu ➜</button></div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="p1">
+<h2>Menu & Order</h2><p class="sub">Kisi bhi dish par click karo → bada dekho → order mein add karo.</p>
+<div class="chips" id="chips"></div><div class="grid" id="mg"></div>
+<h2>Menu Cards 📜</h2><p class="sub">Card par click karo to full size mein dekho.</p>
+<div class="cards3"><img src="images/menu-uzbek.jpg" alt="Uzbek menu" class="zoom"><img src="images/menu-caravan.jpg" alt="Caravan menu" class="zoom"><img src="images/menu-breakfast.jpg" alt="Breakfast menu" class="zoom"></div>
+<div class="cart card" id="cartbox"><h3>Your Order 🧾</h3><div id="cl"></div><p id="ct" class="price"></p>
+<select id="ty"><option>Dine-in</option><option>Pickup</option><option>Delivery</option></select>
+<input id="tn" placeholder="Table no. / Address"><input id="on" placeholder="Your name"><input id="op" placeholder="Phone" type="tel">
+<button class="btn" id="send">Send order on WhatsApp</button><p id="em"></p></div>
+<div class="next"><button class="btn o" data-go="0">⬅ Back</button> <button class="btn" data-go="2">Next: Book & Events ➜</button></div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="p2">
+<h2>Advance Table Booking</h2>
+<form id="bf" class="card"><input name="n" placeholder="Name" required><input name="p" type="tel" placeholder="Phone" required>
+<input name="d" type="date" required><input name="g" type="number" min="1" value="4" placeholder="Guests">
+<div class="full"><b>Slot chuno:</b><div class="slots" id="slots"></div></div>
+<select name="o" id="occ"><option>Regular Dining</option><option>Birthday Party</option><option>Religious Function</option><option>Bulk Order</option><option>Surprise Plan</option><option>Family Seating</option></select>
+<textarea name="m" class="full" placeholder="Special requests"></textarea>
+<button class="btn full">Book on WhatsApp</button></form>
+<h2>Events & Bulk 🎉</h2>
+<div class="grid">
+<div class="card ev" data-o="Religious Function"><h3>🕌 Religious Function</h3>Milad, Iftar, Aqiqah, Nikah dawat – pure halal, big kazan plov.<br><button class="btn">Book karo</button></div>
+<div class="card ev" data-o="Bulk Order"><h3>🍲 Bulk Orders</h3>20+ guests ke liye plov, kabab, samsa trays.<br><button class="btn">Quote lo</button></div>
+<div class="card ev" data-o="Birthday Party"><h3>🎂 Birthday</h3>Decor, cake table, set menu.<br><button class="btn">Book karo</button></div>
+<div class="card ev" data-o="Surprise Plan"><h3>🎁 Surprise Planner</h3>Timing, candles, chai moment.<br><button class="btn">Plan karo</button></div></div>
+<h2>Follow Us 🤙</h2>
+<div class="social"><a href="https://instagram.com/" target="_blank" class="sticker ig">📸 Instagram</a><a href="https://facebook.com/" target="_blank" class="sticker fb">👍 Facebook</a>
+<a href="https://wa.me/910000000000" target="_blank" class="sticker wa">💬 WhatsApp</a></div>
+<div class="ig-grid"><img src="images/magicpark.webp" alt="Magic Park Tashkent" class="zoom"><img src="images/non.webp" alt="Non bread" class="zoom"><img src="images/plov.jpg" alt="Plov" class="zoom"></div>
+<p class="foot">Be Casa · Kalyan–Dombivali (full address yahan likho) · 11 AM – 11:30 PM · All non-veg Halal</p>
+<div class="next"><button class="btn o" data-go="1">⬅ Back to Menu</button></div>
+</section>
+</main>
+<dialog id="dlg"><button id="dx">✕</button><img id="di" alt=""><h3 id="dn"></h3><p id="dd"></p><p class="price" id="dpr"></p><button class="btn" id="da">Add to order</button></dialog>
+<dialog id="lb"><button id="lx">✕</button><img id="li" alt=""></dialog>
+<a class="fab" id="cf" hidden>🧾 Order (<span id="cn">0</span>)</a>
+<script src="js/script.js"></script></body></html>
